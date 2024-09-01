@@ -4,8 +4,8 @@ name: second.yml
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  #push:
-  #  branches: [ "main" ]
+  push:
+    branches: [ "main" ]
  # pull_request:
   #  branches: [ "main" ]
 
@@ -36,7 +36,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          echo Todays date is
+          echo "Todays date is:"
           date
 
   macos:
