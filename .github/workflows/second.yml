@@ -36,7 +36,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          echo "Todays date is:" date
+          echo "Todays date is:" 
+          date
 
   macos:
     # The type of runner that the job will run on
